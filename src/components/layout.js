@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/header";
-import Footer from "../components/header";
+import Footer from "../components/footer";
 import {Helmet} from "react-helmet";
 import { Global, css } from '@emotion/core';
 import UseSeo from '../Hooks/use-seo';
@@ -9,7 +9,7 @@ const Layout = props => {
 
     const seo = UseSeo();
 
-    const { fallbackSeo: { description }, title  } = seo;
+    const { fallbackSeo: { description, title }  } = seo;
 
     console.log(seo); 
   return (
